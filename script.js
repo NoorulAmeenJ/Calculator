@@ -1,25 +1,18 @@
-console.log("mkkf");
 
-function eight() {
-
-    // console.log("8")
+ var result =document.getElementById("result")
+function number(x){
+   
+     result.value =   result.value + x
 }
-var result = document.querySelector("#result");
-result.addEventListener("input", (e)=>{
-    console.log(e)
+function Clear(){
+   
+    result.value =  ""
 }
-)
-var answer = document.querySelector("#answer");
-
-
-function equal() {
-    // console.log( eval(result.value))
-    var consol= eval(result.value)
-    console.log(consol)
-    answer.textContent = `${consol}`
-    // result.textContent = `: ${consol}`
+function back(){
+   
+    result.value = result.value.slice(0,-1);
+    
 }
-
-result.style.backgroundColor = "pink";
-
-var three= document.getElementById('three');
+function equal(){
+    result.value = eval(result.value)
+}

@@ -9,45 +9,43 @@
 </head>
 <body>
 
- <div id="container">
+ <div id="container">  
     <H1 id="title">Calculator</H1>
     <p id="description">Calculator is done by DOM</p>
-    <div id="answer" >Your answer is </div>
     <input id="result" type="text" placeholder="Enter the correct value" >
     
-    <div id="row1" >
-        <button id="clear" >C</button>
-      <button id="back">back</button>
-        <button>%</button>
-        <button>/</button>
-    </div>
-    <div id="row2">
-        <button>7</button>
-      <button id="eight" onclick="eight()">8</button>
-        <button>9</button>
-        <button>*</button>
-    </div>
-    <div id="row3">
-        <button>4</button>
-      <button>5</button>
-        <button>6</button>
-        <button id="subtract">-</button>
-    </div>
-    <div id="row4">
-        <button>1</button>
-        <button>2</button>
-        <button id="three">3</button>
-        <button id="add" >+</button>
-    </div>
-    <div id="row5">
-        <button>0</button>
-        <button>00</button>
-        <button>.</button>
-        <button id="equal" onclick="equal()" >=</button>
-    </div>
- </div>
-
-
+    <div id="row1" > 
+        <button onclick="Clear() ">c</button>
+        <button onclick="back() ">back</button>
+        <button onclick="number('%') ">%</button>
+        <button onclick="number('/')"> / </button>
+     </div>
+     <div id="row2" > 
+        <button onclick="number('7')">7</button>
+      <button onclick="number('8')">8</button>
+        <button onclick="number('9')" >9</button>
+        <button onclick="number('*')"> * </button>
+     </div>
+     <div id="row3" > 
+        <button onclick="number('4')">4</button>
+      <button onclick="number('5')">5</button>
+        <button onclick="number('6')" >6</button>
+        <button onclick="number('-')"> - </button>
+     </div>
+     <div id="row4" > 
+        <button onclick="number('1')">1</button>
+      <button onclick="number('2')">2</button>
+        <button onclick="number('3')" >3</button>
+        <button onclick="number('+')"> + </button>
+     </div>
+     <div id="row5" > 
+        <button onclick="number('0')">0</button>
+      <button onclick="number('00')">00</button>
+        <button onclick="number('.')" >.</button>
+        <button onclick="equal()"> = </button>
+     </div>
+     
+    </div>  
     <script src="script.js"></script>
 </body>
 </html>
