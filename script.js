@@ -2,7 +2,6 @@ var container = document.createElement('div');
 container.setAttribute('id', 'container');
 document.body.append(container);
 
-
 var contant= document.createElement('div');
 contant.setAttribute('id', 'contant-box');
 container.append(contant);
@@ -16,7 +15,6 @@ description.setAttribute('id', 'description');
 description.textContent = 'Calculator is done with DOM';
 contant.append(header, description);
 
-
 var result = document.createElement('div');
 result.setAttribute('id', 'result-box');
 container.append(result);
@@ -27,49 +25,39 @@ screen.setAttribute('type', 'text');
 screen.setAttribute('placeholder', '0');
 result.append(screen);
  
-        var button = document.createElement('div');
-        button.setAttribute('id', 'button-box');
-        container.append(button);
+var button = document.createElement('div');
+ button.setAttribute('id', 'button-box');
+ container.append(button);
 
-   var number = document.createElement('div');
-        number.setAttribute('id', 'numbers');
-        button.append(number);
+ var number = document.createElement('div');
+ number.setAttribute('id', 'numbers');
+button.append(number);
 
 var btnclear = document.createElement('button');
 btnclear.setAttribute('id', 'clear');
 btnclear.setAttribute('onclick', 'Clear()');
 btnclear.textContent="CL";
 
-
 var btnback = document.createElement('button');
 btnback.setAttribute('onclick', 'back()');
 btnback.textContent="Bk";
-
-
 
 var btnmod = document.createElement('button');
 btnmod.setAttribute('onclick', 'numeric("%")');
 btnmod.textContent="%";
 
-
- 
 var btndiv = document.createElement('button');
 btndiv.setAttribute('onclick', 'numeric("/")');
 btndiv.textContent="/";
-
-
 
 var btnseven = document.createElement('button');
 btnseven.setAttribute('onclick', 'numeric("7")');
 btnseven.textContent="7";
 
-
-
 var btneight = document.createElement('button');
 btneight.setAttribute('onclick', 'numeric("8")');
 btneight.textContent="8";
 
-  
   var btnnine = document.createElement('button');
   btnnine.setAttribute('onclick', "numeric('9')");
   btnnine.textContent="9";
@@ -82,7 +70,6 @@ btneight.textContent="8";
 btnfour.setAttribute('onclick', 'numeric("4")');
 btnfour.textContent="4";
 
-
 var btnfive = document.createElement('button');
 btnfive.setAttribute('onclick', 'numeric("5")');
 btnfive.textContent="5";
@@ -91,7 +78,6 @@ btnfive.textContent="5";
 btnsix.setAttribute('onclick', 'numeric("6")');
 btnsix.textContent="6";
 
- 
   var btnsub = document.createElement('button');
   btnsub.setAttribute('id', 'subtract');
   btnsub.setAttribute('onclick', 'numeric("-")');
@@ -107,7 +93,6 @@ btntwo.setAttribute('id', '2');
 btntwo.setAttribute('onclick', 'numeric("2")');
 btntwo.textContent="2";
 
- 
   var btnthree = document.createElement('button');
   btnthree.setAttribute('id', '3');
   btnthree.setAttribute('onclick', 'numeric("3")');
@@ -118,7 +103,6 @@ btntwo.textContent="2";
   btnadd.setAttribute('onclick', 'numeric("+")');
   btnadd.textContent="+";
 
- 
   var btnzero = document.createElement('button');
   btnzero.setAttribute('onclick', 'numeric("0")');
 btnzero.textContent="0";
@@ -127,12 +111,10 @@ var btnddzero = document.createElement('button');
 btnddzero.setAttribute('onclick', 'numeric("00")');
 btnddzero.textContent="00";
 
-  
   var btndot = document.createElement('button');
   btndot.setAttribute('onclick', 'numeric(".")');
   btndot.textContent=".";
 
- 
   var btnequal = document.createElement('button');
   btnequal.setAttribute('id', 'equal');
   btnequal.setAttribute('onclick', 'equal()');
@@ -142,18 +124,15 @@ btnddzero.textContent="00";
  
   number.append(btnsub,btnone,btntwo,btnthree,btnadd,btnzero,btnddzero,btndot,btnequal)
 
-
   var answer =document.getElementById("result")
-//   answer.value =   answer.value + x
+
  function numeric(x){
     answer.value =   answer.value + x
-
  }
   function Clear(){
       answer.value =  ""
   }
   function back(){
-    
       answer.value = answer.value.slice(0,-1);
   }
   function equal(){
