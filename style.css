@@ -37,7 +37,7 @@
    border-radius: 30px;
   
 }
-#resultbox{
+#result-box{
   flex-basis: 19%;
   border-radius: 30px;
   
@@ -49,20 +49,28 @@
   
 
 }
-#mutton{
+#numbers{
   height: 100%;
   display: grid;
   grid-template-columns: repeat(4,2fr);
   gap: 0.5rem;
   border-radius: 30px;
+  border-color: aliceblue;
   /* background-color: ; */
 }
 button{
   background-color: white;
   border-radius: 50%;
   color: black;
-  box-shadow: 1px 0px  5px 1px white;
+  font-size: xx-large;
+  box-shadow: inset -1px 0px  -5px 1px white;
 }
 button:hover {
   background-color:rgb(246, 205, 205);
+}
+
+@media only screen and (max-width: 500px) {
+  button {
+    font-size:medium ;
+  }
 }
